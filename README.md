@@ -24,25 +24,28 @@ A NRPE command plugin for do interface bitween NRPE and icinga2 API/REST. Script
 Examples:
 LIST ALL:
 ---------
-# /usr/lib64/nagios/plugins/icinga2-api.py ALL
+<code>
+/usr/lib64/nagios/plugins/icinga2-api.py ALL
 server#@#ping4
 server#@#ssh
 server#@#Icinga
 server#@#http
 server#@#disk
 ...
-
+</code>
 for separate edit code for '#@#', if you want change it.
 
 NRPE REQUEST:
 -------------
-<code>sd
-</code>  
-/usr/lib64/nagios/plugins/icinga2-api.py monitsvg.engsec load
-API answer: load on :monitsvg.engsec OK : OK - Charge moyenne: 0.17, 0.13, 0.12 | load1=0.170;5.000;10.000;0; load5=0.130;4.000;6.000;0; load15=0.120;3.000;4.000;0;
+<code>
+  
+ /usr/lib64/nagios/plugins/icinga2-api.py monitsvg.engsec load
+ API answer: load on :monitsvg.engsec OK : OK - Charge moyenne: 0.17, 0.13, 0.12 | load1=0.170;5.000;10.000;0;  load5=0.130;4.000;6.000;0; load15=0.120;3.000;4.000;0;
 
-echo $?
-0
+ echo $?
+ 0
+</code>  
+
 
 
 
