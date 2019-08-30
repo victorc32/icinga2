@@ -39,7 +39,7 @@ NRPE REQUEST:
 -------------
 <code>
   
- /usr/lib64/nagios/plugins/icinga2-api.py monitsvg.engsec load
+ /usr/lib64/nagios/plugins/icinga2-api.py monit load
  API answer: load on :server OK : OK - Charge moyenne: 0.17, 0.13, 0.12 | load1=0.170;5.000;10.000;0;  load5=0.130;4.000;6.000;0; load15=0.120;3.000;4.000;0;
 
  echo $?
